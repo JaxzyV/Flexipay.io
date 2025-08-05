@@ -1,0 +1,529 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* asll */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* - */
+/* badan */
+body {
+  /* background-image: url(love.jpg); */
+  background-color: var(--primary-color-2);
+}
+
+/* - */
+/* variable color */
+:root {
+  --primary-color-1: #58738f;
+  --primary-color-2: #6e91b2;
+  --secondary-color: #303f9f;
+  --text-color: rgb(66, 66, 91);
+  --light-text: #e8eaf6;
+  --transition: all 0.3s ease;
+}
+
+/* - */
+/* navigasi */
+
+.aktif {
+  color: var(--light-text);
+  background-color: black;
+  border-radius: 10px;
+  padding: 4px;
+  transition: all 0.6s ease-in-out;
+}
+
+.FContainer {
+  display: flex;
+  width: 100%;
+  height: 17vh;
+  /* height: 100vh; */
+  font-family: serif;
+}
+
+/* <> */
+.bungkus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: size 15px;
+  padding: 15px;
+  width: 100%;
+  height: 80px;
+  background-color: var(--primary-color-1);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 5);
+  font-family: "comic";
+}
+
+/* <> */
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 170%;
+}
+
+/* <> */
+.name {
+  color: var(--light-text);
+  font-weight: 900;
+}
+
+/* <> */
+.name-2 {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* <> */
+.navigasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <> */
+.navigasi li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+/* <> */
+.navigasi li a {
+  color: var(--light-text);
+  font-size: 70%;
+  text-decoration: none;
+  font-family: "Comic";
+}
+
+/* <> */
+/* .aktif{
+  background-color: #303f9f;
+  color: white;
+  padding: 5px;
+} */
+/* <> */
+.navigasi li a:hover {
+  color: var(--light-text);
+  background-color: black;
+  border-radius: 10px;
+  padding: 4px;
+  transition: all 0.6s ease-in-out;
+}
+
+/* <> */
+.navigasi li img {
+  border-radius: 100%;
+  width: 40px;
+  height: 35px;
+}
+
+/* <> */
+/* .navigasi li img:hover {
+  border-radius: 20px;
+  width: 90px;
+  height: 85px;
+  transition: all 0.4s ease-in-out;
+  font-family: "comic";
+} */
+/* akhir navigasi */
+/* .logout */
+.logout {
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  margin-left: 75%;
+  /* border: solid black; */
+  border-radius: 4px;
+  width: 78px;
+  /* background-color: white; */
+  height: 25px;
+}
+
+.logout:hover {
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 4px 3px;
+}
+
+.text-logout {
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding-left: 13px;
+}
+
+/* akhir logout */
+/* layar iklan */
+.main {
+  margin-top: -3rem;
+  width: 80%;
+  height: 70%;
+  margin-left: 10%;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  border: 5px solid black;
+  border-radius: 3px;
+  box-shadow: 5px 10px 30px black;
+}
+
+/* <> */
+/* .main:hover {
+  transition: all 0.7s ease-in-out;
+  width: 70%;
+  height: 40%;
+  box-shadow: 10px 15px 35px black;
+  border: 7px solid black;
+  margin-left: 5%;
+} */
+/* <> */
+.wrap {
+  display: flex;
+  animation: slide 40s infinite;
+}
+
+/* <> */
+.wrap img {
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+/* <> */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  10% {
+    transform: translateX(0%);
+  }
+
+  30% {
+    transform: translateX(-100%);
+  }
+
+  40% {
+    transform: translateX(-200%);
+  }
+
+  50% {
+    transform: translateX(-300%);
+  }
+
+  60% {
+    transform: translateX(-300%);
+  }
+
+  80% {
+    transform: translateX(-200%);
+  }
+
+  90% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* - */
+/* name game */
+.title {
+  padding-left: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  margin-bottom: -14px;
+  font-weight: bold;
+  color: var(--light-text);
+}
+
+/* - */
+/* kotak game */
+.box {
+  width: 140px;
+  height: 130px;
+  margin: 5px;
+  /* margin-bottom: 3rem; */
+  border-radius: 11px;
+  box-shadow: 5px 5px 0px 0px rgb(171, 171, 188);
+}
+
+/* <> */
+/* .box:hover {
+  transition: all 0.5s ease-in;
+  box-shadow: 10px 10px 0px 0px rgb(171, 171, 188);
+  width: 150px;
+  height: 129px;
+} */
+/* - */
+/*posisi kotak*/
+.wreep-box {
+  /* padding-left: 5%; */
+  margin-left: 10% !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* <> */
+.content-pay {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+}
+
+/* - */
+/* all tampilan */
+.link-1 {
+  padding-left: 35%;
+  padding-top: 2rem;
+  color: yellow;
+  padding-bottom: 3rem;
+  text-decoration: none;
+}
+
+/* <> */
+.link-2 {
+  color: yellow;
+  padding-left: 35%;
+  padding-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+/* - */
+/* all tampilan <> footer */
+.space {
+  padding-bottom: 2rem;
+}
+
+/* - */
+/* pay digital */
+
+.money {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding-left: 2rem;
+  margin-top: 3rem;
+}
+.ewallet {
+  margin-left: 10%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+/* h2 {
+  color: white;
+  margin-left: 10%;
+  margin-bottom: 0.5rem;
+} */
+/* - */
+/* src game */
+.inof {
+  display: flex;
+}
+
+/* <> */
+div input {
+  padding-left: 0.5rem;
+  margin-left: 10%;
+  font-size: 110%;
+  margin-bottom: 2rem;
+  border-radius: 21px;
+}
+
+/* <> */
+/* div input:hover {
+  transition: all 0.7s ease-in-out;
+  font-weight: bold;
+  color: white;
+  background-color: gray;
+  box-shadow: 0 5px 4px white;
+} */
+/* div input:hover {
+  transition: all 1s ease-in-out;
+  font-weight: bold;
+  color: black;
+  box-shadow: 0 4px 2px 1px;
+} */
+
+/* - */
+/* tombol src */
+.li-klik {
+  margin-top: -2rem;
+  width: 150%;
+}
+
+.klik {
+  width: 200%;
+  font-size: 90%;
+  /* margin-left: 12%; */
+  border-radius: 10px;
+}
+
+/* <> */
+/* .klik:hover {
+  transition: all 1s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 4px 2px 1px;
+}
+ */
+/* - */
+/* info */
+.info-1 {
+  font-size: 19px;
+  color: var(--light-text);
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.link-3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  color: var(--light-text);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+/* - */
+p {
+  padding-left: 3%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* - */
+a {
+  color: yellow;
+}
+
+/* - */
+li {
+  list-style-type: none;
+  padding-left: 3%;
+  font-size: large;
+  font-weight: bold;
+  font-family: georgia;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+/* - */
+.info-akhir {
+  padding-bottom: 3rem;
+}
+
+/* akhir info */
+/* developer */
+.developer {
+  padding-top: 0.5rem;
+  margin-top: 2rem;
+  background-color: var(--primary-color-1);
+}
+
+/* - */
+.up-penerbit {
+  padding-left: 1%;
+}
+
+div h3 {
+  padding-left: 4%;
+  padding-bottom: 0.5rem;
+  font-size: x-large;
+  color: var(--light-text);
+}
+
+/* - */
+div a {
+  text-decoration: none;
+}
+
+/* - */
+.div-penerbit {
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+}
+
+/* - */
+.info-a {
+  padding-bottom: 1rem;
+}
+
+.Hm {
+  padding-left: 4%;
+  padding-bottom: 1rem;
+}
+
+/* - */
+.region {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2%;
+  padding-bottom: 1rem;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+/* - */
+.region:hover {
+  padding-top: 12px;
+  font-size: larger;
+  background-color: var(--primary-color-2);
+  width: 144px;
+  margin-left: 4%;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+/* - */
+.indo {
+  color: red;
+}
+
+/* - */
+.nesia {
+  color: white;
+}
+
+/* - */
+.cari-tahu {
+  padding-left: 4%;
+  padding-bottom: 1rem;
+}
+
+/* akhir developer */
+/* footer */
+.akhir {
+  padding-left: 17%;
+  color: var(--light-text);
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
+
+.footer {
+  padding-left: 5%;
+}
+
+/* - */
+.akhir-footer {
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 0.3rem;
+  padding-left: -1%;
+}
+
+/* Akhir footer */
